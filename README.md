@@ -19,7 +19,8 @@ containing the files for each character. Zip this structure so you have a file c
 ## Setting up for Model Training at MaixHub
 To use the online model training you have to provide a key from your hardware. Note that following this procedure permanently disables the JTAG port.  
 Download the key_gen_v1.2.bin binary from this repo.  
-Download the kflash-gui from SiPEED here - https://dl.sipeed.com/MAIX/tools/kflash_gui/kflash_gui_v1.6.5.  
+Download kflash-gui from SiPEED here - https://dl.sipeed.com/MAIX/tools/kflash_gui/kflash_gui_v1.6.5.  
+Unzip and run kflash_gui.exe in the kflash_gui folder
 Plug in your Maix board, choose the correct Port, click 'Open File' and selected the key_gen binary and click 'Download' to upload to your board.  
 In a serial terminal (you can use the Arduino serial monitor for this) check for the key when you reset the board.  
 
