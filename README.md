@@ -1,5 +1,5 @@
-# Sipeed MaixPy Star Wars Character Classification Model
-Create and train a Star Wars character classification model with Maixhub. Using the online model training you can create a model for either object classification or detection.
+# Sipeed MaixPy Star Wars Character Detection Training
+Train an image classification model with Maixhub to detect characters from Star Wars. Using online model training you can create a model for either object classification or detection.
 
 ![results](https://user-images.githubusercontent.com/60509953/106311191-0892f600-6265-11eb-9a53-b60bb8c28444.jpg)
 
@@ -32,7 +32,7 @@ Upload the datasets.zip file you created earlier and click 'Start Training'.
 It should start training within a few minutes. If nothing has happened after an hour, try again.  
 The model and other files with be sent as a link to your email address.  
 
-## Running the Model on your Board
+## Running the Detection on your Board
 Check the warning.txt in the folder you downloaded for any serious problems.  
 I found that the labelling was wrong and I had to put this line in alphabetical order:  
 labels = ["c3po", "r2d2", "vader", "yoda"]  
