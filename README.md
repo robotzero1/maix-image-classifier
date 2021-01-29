@@ -1,6 +1,7 @@
-# maix-starwars-model
+# Sipeed MaixPy Star Wars Character Classification Model
 Create and train a Star Wars character classification model with Maixhub. Using the online model training you can create a model for either object classification or detection.
 
+![results](https://user-images.githubusercontent.com/60509953/106311191-0892f600-6265-11eb-9a53-b60bb8c28444.jpg)
 
 ## Preparing the Dataset
 Following the instructions here to bulk download some images of your favourite Star Wars characters  
