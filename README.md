@@ -55,10 +55,10 @@ Add all the 224px x 224px images into one directory.
 Follow the instructions here to add the directory and label the images: https://github.com/microsoft/VoTT#using-vott  
 I found it worked with 107 tagged regions with about 35 for each of the three characters. Sipeed recommend 100 per object so in this test 300 tags.  
 Export the labels in TensorFlow format. You should have this structure:  
--datasets
- --0.tfrecord
- --1.tfrecord
- --2.tfrecord
+-datasets  
+ --0.tfrecord  
+ --1.tfrecord  
+ --2.tfrecord  
   ---tf_label_map.pbtxt  
 Zip the datasets folder  
 Assuming you have followed Maix Account Setup above, this time choose Object Detection and click 'Next'.  
