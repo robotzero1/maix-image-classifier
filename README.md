@@ -4,8 +4,8 @@ Train an image classification model with Maixhub to detect characters from Star 
 ![vader full](https://user-images.githubusercontent.com/60509953/106392797-d663ce80-63f3-11eb-8ffc-e784ee890f65.jpg)
 
 ## Preparing the Dataset
-Following the instructions in the Collecting Images section from here - https://github.com/robotzero1/tf2-retrain-easy to bulk download some images of your favourite Star Wars characters  
-Clean up the images to remove anything that will confuse the machine learning algorithm  
+Following the instructions in the Collecting Images section from here - https://github.com/robotzero1/tf2-retrain-easy to bulk download some images of your favourite Star Wars characters.  
+Clean up the images to remove anything that will confuse the machine learning algorithm.  
 Use a bulk image resize tool to resize all the images to 224x224  (I used Fireworks. This is for GIMP https://alessandrofrancesconi.it/projects/bimp/ or most image editors offer this.)
 
 Create a folder structure like this  
