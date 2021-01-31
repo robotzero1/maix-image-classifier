@@ -4,12 +4,12 @@ Train an image classification model with Maixhub to detect characters from Star 
 ![results](https://user-images.githubusercontent.com/60509953/106311191-0892f600-6265-11eb-9a53-b60bb8c28444.jpg)
 
 ## Preparing the Dataset
-Following the instructions here to bulk download some images of your favourite Star Wars characters  
+Following the instructions in the Collecting Images section from here - https://github.com/robotzero1/tf2-retrain-easy to bulk download some images of your favourite Star Wars characters  
 Clean up the images to remove anything that will confuse the machine learning algorithm  
-Use a bulk image transformation tool to resize all the images to 224x224  
+Use a bulk image resize tool to resize all the images to 224x224  (I used Fireworks. This is for GIMP https://alessandrofrancesconi.it/projects/bimp/ or most image editors offer this.)
 
 Create a folder structure like this  
-datasets  
+-datasets  
  --c3po  
  --r2d2  
  --vader  
@@ -20,7 +20,7 @@ containing the files for each character. Zip this structure so you have a file c
 To use the online model training you have to provide a key from your hardware. Note that following this procedure permanently disables the JTAG port.  
 Download the key_gen_v1.2.bin binary from this repo.  
 Download kflash-gui from SiPEED here - https://dl.sipeed.com/MAIX/tools/kflash_gui/kflash_gui_v1.6.5.  
-Unzip and run kflash_gui.exe in the kflash_gui folder
+Unzip and run kflash_gui.exe in the kflash_gui folder.  
 Plug in your Maix board, choose the correct Port, click 'Open File' and selected the key_gen binary and click 'Download' to upload to your board.  
 In a serial terminal (you can use the Arduino serial monitor for this) check for the key when you reset the board.  
 
@@ -33,13 +33,13 @@ It should start training within a few minutes. If nothing has happened after an 
 The model and other files with be sent as a link to your email address.  
 
 ## Running the Detection on your Board
-Check the warning.txt in the folder you downloaded for any serious problems.  
+Check the warning.txt in the folder linked in the email for any serious problems.  
 I found that the labelling was wrong and I had to put this line in alphabetical order:  
 labels = ["c3po", "r2d2", "vader", "yoda"]  
 Copy the entire contents of the directory to a FAT (not FAT32 or exFat) formatted microSD card. The partition size must be less than 4GB to format a FAT partition. The easiest option is to use a 4GB card.  
 Insert the card into the board.  
 Download the firmware from this repo or download the latest from here: https://dl.sipeed.com/shareURL/MAIX/MaixPy/release/master You need a version with '_mimimum' in the filename to leave space for the model file.  
-Flash the firmware in the same way as the key_gen.  
+Flash the firmware in the same way as the key_gen in the first section.  
 Reset the board and you should see the splash screen and then be able to test the detection.  
-If it doesn't start, try connecting to a serial monitor to look for error messages.
+If it doesn't start, try connecting to a serial monitor to look for error messages.  
 
