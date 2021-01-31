@@ -1,7 +1,7 @@
 # Sipeed MaixPy Star Wars Character Detection Training
 Train an image classification model with Maixhub to detect characters from Star Wars. Using online model training you can create a model for either object classification or detection. Note that this is AI 'on the edge' running on a microcontroller with MicroPython without internet connectivity.
 
-![results](https://user-images.githubusercontent.com/60509953/106311191-0892f600-6265-11eb-9a53-b60bb8c28444.jpg)
+![vader full](https://user-images.githubusercontent.com/60509953/106392355-a9162100-63f1-11eb-8854-bda8c4874bac.jpg)
 
 ## Preparing the Dataset
 Following the instructions in the Collecting Images section from here - https://github.com/robotzero1/tf2-retrain-easy to bulk download some images of your favourite Star Wars characters  
@@ -41,5 +41,14 @@ Insert the card into the board.
 Download the firmware from this repo or download the latest from here: https://dl.sipeed.com/shareURL/MAIX/MaixPy/release/master You need a version with '_mimimum' in the filename to leave space for the model file.  
 Flash the firmware in the same way as the key_gen in the first section.  
 Reset the board and you should see the splash screen and then be able to test the detection.  
-If it doesn't start, try connecting to a serial monitor to look for error messages.  
+If it doesn't start, try connecting to a serial monitor to look for error messages.
+
+![results](https://user-images.githubusercontent.com/60509953/106311191-0892f600-6265-11eb-9a53-b60bb8c28444.jpg)  
+
+Quick video of testing the detection is here: https://youtu.be/K3XFobQzlH4
+
+
+
+
+
 
