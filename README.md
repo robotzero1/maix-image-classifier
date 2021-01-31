@@ -1,7 +1,7 @@
 # Sipeed MaixPy Star Wars Character Detection Training
 Train an image classification model with Maixhub to detect characters from Star Wars. Using online model training you can create a model for either object classification or detection. Note that this is AI 'on the edge' running on a microcontroller with MicroPython without internet connectivity.
 
-![vader full](https://user-images.githubusercontent.com/60509953/106392355-a9162100-63f1-11eb-8854-bda8c4874bac.jpg)
+![vader full](https://user-images.githubusercontent.com/60509953/106392797-d663ce80-63f3-11eb-8ffc-e784ee890f65.jpg)
 
 ## Preparing the Dataset
 Following the instructions in the Collecting Images section from here - https://github.com/robotzero1/tf2-retrain-easy to bulk download some images of your favourite Star Wars characters  
