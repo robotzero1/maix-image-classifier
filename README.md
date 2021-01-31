@@ -3,10 +3,10 @@ Train an image classification model with Maixhub to detect characters from Star 
 
 ![vader full](https://user-images.githubusercontent.com/60509953/106392797-d663ce80-63f3-11eb-8ffc-e784ee890f65.jpg)
 
-## Preparing the Dataset
+## Preparing the Dataset for Classification
 Following the instructions in the Collecting Images section from here - https://github.com/robotzero1/tf2-retrain-easy to bulk download some images of your favourite Star Wars characters.  
-Clean up the images to remove anything that will confuse the machine learning algorithm.  
-Use a bulk image resize tool to resize all the images to 224x224  (I used Fireworks. This is for GIMP https://alessandrofrancesconi.it/projects/bimp/ or most image editors offer this.)
+Remove anything that will confuse the machine learning algorithm.  
+Use a bulk image resize tool to resize all the images to 224x224 (I used Fireworks. This is for GIMP https://alessandrofrancesconi.it/projects/bimp/ or most image editors offer this).
 
 Create a folder structure like this  
 -datasets  
@@ -48,7 +48,23 @@ If it doesn't start, try connecting to a serial monitor to look for error messag
 Quick video of testing the detection is here: https://youtu.be/K3XFobQzlH4
 
 
-
+## Preparing for Object Detection
+Object detection adds the ability to find the location and size of the object. The dataset requires manual labelling by a human for this to work.  
+VoTT from Microsoft can be used for this. Download from here: https://github.com/Microsoft/VoTT/releases (For Windows use the -win32.exe download).  
+Add all the 224px x 224px images into one directory.  
+Follow the instructions here to add the directory and label the images: https://github.com/microsoft/VoTT#using-vott  
+I found it worked with 107 tagged regions with about 35 for each of the three characters. Sipeed recommend 100 per object so in this test 300 tags.  
+Export the labels in TensorFlow format. You should have this structure:  
+-datasets
+ --0.tfrecord
+ --1.tfrecord
+ --2.tfrecord
+  ---tf_label_map.pbtxt  
+Zip the datasets folder  
+Assuming you have followed Maix Account Setup above, this time choose Object Detection and click 'Next'.  
+Upload the datasets.zip file and click 'Start Training'.  
+It should start training within a few minutes. If nothing has happened after an hour, try again.  
+The model and other files with be sent as a link to your email address.  
 
 
 
