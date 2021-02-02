@@ -1,0 +1,11 @@
+=========================================================================
+train warnings: these warn info may lead train error(accuracy loss), please check carefully
+=========================================================================
+训练警告： 这些警告信息可能导致训练误差，请务必仔细检查
+=========================================================================
+
+
+image pic_033%20-%20Copy%20-%20Copy.png shape not valid, input:(224, 224, 4), require:(224, 224, 3)
+
+image pic_016%20-%20Copy.png shape not valid, input:(224, 224, 4), require:(224, 224, 3)
+
